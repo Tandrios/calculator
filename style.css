@@ -3,4 +3,61 @@
     margin: 0px;
     padding: 0px;
 }
+header {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.calculator-container {
+    display: flex;
+    justify-content: center;
+    padding: 3rem
+}
 
+.calculator {
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+}
+
+.calculator > * {
+    border: 1px solid #5C5470;
+    background-color: #FAF0E6;
+}
+
+.display {
+    background-color: lightgrey;
+    font-size: 64px;
+    text-align: end;
+    padding: 2px 15px;
+    border: 5px solid #5C5470;
+    color: #352F44;
+}
+
+.calculator-main {
+    flex-wrap: wrap;
+    display: flex;
+
+}
+
+.row {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row > * {
+    flex: 1;
+    width: 120px;
+    height: 80px;
+    border: 2px solid #5C5470;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #B9B4C7;
+    color: #352F44;
+}
